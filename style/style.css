@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", "monospace", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+main {
+  color: #ffff;
+  aspect-ratio: 2880 / 1600;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  text-decoration-style: none;
+  gap: 3.5rem;
+}
+
+.link a {
+  color: #ffff;
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.nav-links li:last-child a {
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(212, 27%, 19%);
+  background-color: #ffff;
+  border-radius: 15rem;
+  padding: 2rem 2.5rem;
+  transition: all 0.3s;
+}
+
+.nav-links li:last-child a:hover {
+  background-color: #6eceff;
+  color: #ffff;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.h1--main {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 4.2rem;
+  letter-spacing: 0.6rem;
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12rem;
+}
+
+section .arrow {
+  width: 3.8rem;
+}
+
+/*  */
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+
+.info--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info--card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info--card-container div {
+  width: 45rem;
+}
+
+.info--h {
+  font-family: "Fraunces";
+  color: #23303e;
+  font-weight: 900;
+  font-size: 4.4rem;
+  margin-bottom: 3rem;
+}
+
+.info--p {
+  color: #818498;
+  margin-bottom: 3rem;
+  line-height: 2;
+}
+
+.info--link {
+  position: relative;
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: #23303e;
+  text-decoration: none;
+}
+
+.info--link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  height: 0.8rem;
+  width: 110%;
+  border-radius: 20px;
+  z-index: -1;
+  background-color: hsl(51, 100%, 49%);
+  opacity: 0.3;
+  transition: all 0.2s ease-out;
+}
+
+.info--link:hover .info--link::before {
+  opacity: 0;
+}
+
+.graphic--design {
+  background-image: url(../images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 720/600;
+}
+
+.graphic--design div,
+.photography div {
+  width: 45rem;
+  text-align: center;
+}
+
+.graphic--design,
+.photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.photography {
+  background-image: url(../images/desktop/image-photography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 720/600;
+}
+
+/* testimonials */
+.testimonials {
+  padding: 15rem 5rem;
+}
+
+.testimonials--heading {
+  font-size: 2rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.testimonials--card,
+.testimonials--container,
+.testimonials--card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials--container {
+  gap: 10rem;
+}
+
+.testimonials--card {
+  gap: 6rem;
+}
+
+.testimonials--card div {
+  gap: 1rem;
+}
+
+.profile--name {
+  font-family: "Fraunces";
+  font-weight: 900;
+  color: #23303e;
+}
+
+.profile--position {
+  color: hsl(210, 4%, 67%);
+}
+
+.testimonials--slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.testimonials--card {
+  width: 35rem;
+  text-align: center;
+  color: #666d73;
+}
+
+.profile--pic {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+
+.profile--comment {
+  line-height: 1.5;
+}
+
+/* gallery*/
+.gallery--container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.gallery--container img {
+  width: 100%;
+}
+
+/* footer */
+
+footer {
+  background-color: #91d4c6;
+}
