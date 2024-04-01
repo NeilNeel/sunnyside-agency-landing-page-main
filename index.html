@@ -31,6 +31,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/media-query.css" />
 
     <!-- JS -->
     <script src="./main.js" defer></script>
@@ -41,12 +42,19 @@
         <figure>
           <img src="./images/logo.svg" alt="main-logo" />
         </figure>
-        <ul class="nav-links">
-          <li class="link"><a href="#">About</a></li>
-          <li class="link"><a href="#">Services</a></li>
-          <li class="link"><a href="#">Projects</a></li>
-          <li class="link"><a href="#">CONTACT</a></li>
-        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav--links-container">
+          <ul class="nav-links">
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Services</a></li>
+            <li class="link"><a href="#">Projects</a></li>
+            <li class="link nav--link-active"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
       </nav>
       <section>
         <h1 class="h1--main">WE ARE CREATIVES</h1>
@@ -72,7 +80,7 @@
             <a class="info--link" href="#">LEARN MORE</a>
           </div>
         </div>
-        <div>
+        <div class="g--1">
           <img
             class="info--img"
             src="./images/desktop/image-transform.jpg"
@@ -98,23 +106,19 @@
           </div>
         </div>
         <div class="graphic--design">
-          <div>
-            <h2 class="info--h">Graphic Design</h2>
-            <p class="info--p">
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients'
-              attention.
-            </p>
-          </div>
+          <h2 class="info--h">Graphic Design</h2>
+          <p class="info--p">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients'
+            attention.
+          </p>
         </div>
         <div class="photography">
-          <div>
-            <h2 class="info--h">Photography</h2>
-            <p class="info--p">
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
-          </div>
+          <h2 class="info--h">Photography</h2>
+          <p class="info--p">
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
         </div>
       </div>
     </section>

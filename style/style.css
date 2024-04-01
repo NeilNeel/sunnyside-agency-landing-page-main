@@ -16,11 +16,13 @@ body {
 
 main {
   color: #ffff;
-  aspect-ratio: 2880 / 1600;
+  /* aspect-ratio: 2880 / 1600; */
+  height: 100vh;
   background-image: url(../images/desktop/image-header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 2.5rem;
 }
 
 nav {
@@ -32,6 +34,7 @@ nav {
 
 .nav-links {
   display: flex;
+  align-items: center;
   list-style: none;
   text-decoration-style: none;
   gap: 3.5rem;
@@ -43,7 +46,7 @@ nav {
   padding: 2rem;
 }
 
-.nav-links li:last-child a {
+.nav--link-active a {
   font-family: "Fraunces";
   font-weight: 700;
   color: hsl(212, 27%, 19%);
@@ -53,7 +56,7 @@ nav {
   transition: all 0.3s;
 }
 
-.nav-links li:last-child a:hover {
+.nav--link-active a:hover {
   background-color: #6eceff;
   color: #ffff;
 }
@@ -75,11 +78,11 @@ main section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12rem;
+  gap: 5rem;
 }
 
 section .arrow {
-  width: 3.8rem;
+  max-width: 3.8rem;
 }
 
 /*  */
@@ -103,7 +106,8 @@ section .arrow {
 }
 
 .info--card-container div {
-  width: 45rem;
+  max-width: 45rem;
+  padding: 5rem;
 }
 
 .info--h {
@@ -154,9 +158,17 @@ section .arrow {
   aspect-ratio: 720/600;
 }
 
-.graphic--design div,
-.photography div {
-  width: 45rem;
+.graphic--design .info--p {
+  color: #458c7e;
+}
+
+.graphic--design .info--h {
+  color: #25564e;
+}
+
+.graphic--design p,
+.photography p {
+  max-width: 40rem;
   text-align: center;
 }
 
@@ -166,6 +178,9 @@ section .arrow {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  gap: 3.2rem;
+  padding-bottom: 6.4rem;
+  padding: 2.5rem;
 }
 
 .photography {
@@ -174,6 +189,14 @@ section .arrow {
   background-repeat: no-repeat;
   background-size: cover;
   aspect-ratio: 720/600;
+}
+
+.photography .info--h {
+  color: #19536b;
+}
+
+.photography .info--p {
+  color: #19536e;
 }
 
 /* testimonials */
@@ -225,13 +248,13 @@ section .arrow {
 }
 
 .testimonials--card {
-  width: 35rem;
+  max-width: 35rem;
   text-align: center;
   color: #666d73;
 }
 
 .profile--pic {
-  width: 6.4rem;
+  max-width: 6.4rem;
   border-radius: 50%;
 }
 
@@ -290,4 +313,8 @@ footer {
 
 .footer--icon:hover {
   fill: #ffff;
+}
+
+.hamburger {
+  display: none;
 }
