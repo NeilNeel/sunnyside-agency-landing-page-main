@@ -254,4 +254,40 @@ section .arrow {
 
 footer {
   background-color: #91d4c6;
+  padding: 6.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer--logo {
+  width: 12%;
+  /* fill: #2c7566; */
+}
+
+.footer--links {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer--link {
+  color: #49918b;
+  text-decoration: none;
+  padding: 2rem;
+  transition: all 0.3s ease-out;
+}
+
+.footer--link:hover {
+  color: #ffff;
+}
+
+.footer--icon-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer--icon:hover {
+  fill: #ffff;
 }
